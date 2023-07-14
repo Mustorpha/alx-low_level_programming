@@ -1,7 +1,11 @@
 #include <stdio.h>
 
 /**
- * A C program using printf
+ * main - A program using printf
+ *
+ * Description: The program uses printf to 
+ * output the string
+ * Return:0
 */
 
 int main(void)
