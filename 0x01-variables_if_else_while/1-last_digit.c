@@ -7,7 +7,7 @@
  *
  * Description: The function prints the last digit
  * of an integer
- * Return:0
+ * Return: 0
  */
 
 int main(void)
