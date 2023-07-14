@@ -4,7 +4,8 @@
 /**
  * main - Printing string using write function
  *
- * Description: Prints out and that piece of art is useful - Dora Korpar, 2015-10-19
+ * Description: Prints out and that piece of art is
+ * useful - Dora Korpar, 2015-10-19
  * to the standard error
  *
  * Return: 0
