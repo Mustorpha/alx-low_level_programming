@@ -3,8 +3,8 @@
 /**
  * main - A program using printf
  *
- * Description: The program uses printf to 
- * output the string
+ * Description: The program uses printf to output the string
+ * to the standard output
  *
  * Return:0
 */
