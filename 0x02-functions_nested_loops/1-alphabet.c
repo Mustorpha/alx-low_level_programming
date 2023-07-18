@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Prints the alphabets in lower case
+ * print_alphabet - Prints the alphabets in lower case
  *
  * Description: A funtion that prints the known alphabets in
  * lower case using the while loop
