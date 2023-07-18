@@ -2,6 +2,7 @@
 
 /**
  * print_sign - prints the sign of a number
+ * @n: the chracter to prints it's sign
  *
  * Description: A function that checks for the sign of
  * character and prints out the detected sign
