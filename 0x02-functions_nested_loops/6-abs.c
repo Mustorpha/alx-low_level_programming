@@ -2,10 +2,11 @@
 
 /**
  * _abs - prints the ablsolute the value of a character
+ * @n: the character to evaluated
  *
  * Description: A function that prints the absolute value of a
  * character
- * Return: 0
+ * Return: the absolute value of the interger
  */
 
 int _abs(int n)
