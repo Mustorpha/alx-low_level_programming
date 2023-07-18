@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * print_alphabet - Prints the alphabets in lower case
+ * print_alphabet - check the code for ALX School students.
  *
- * Description: A funtion that prints the known alphabets in
- * lower case using the while loop
- * Return:0
+ * Return: Always 0.
  */
 
 void print_alphabet(void)
 {
-	char c = 'a';
+	char alp = 'a';
 
-	while (c <= 'z')
+	while (alp <= 'z')
 	{
-		_putchar(c);
-		c++;
+		_putchar (alp);
+		alp++;
+
 	}
-	_putchar('\n');
+	_putchar ('\n');
+
 }

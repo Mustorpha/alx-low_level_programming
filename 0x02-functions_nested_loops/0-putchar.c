@@ -1,25 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-
 /**
- * main - prints _putchar to the standard output
- *
- * Description: A function that prints the string _putchar
- * to the standard output
- * Return: 0
+ * main - prints _putchar, fllowd by a new linees
+ * Return: Alwys 0 (Success)
  */
-
 int main(void)
 {
-	char recur[] = "_putchar";
+	char abe[] = "_putchar";
 
-	int i;
+	int c;
 
-	for (i = 0; i < 8; i++)
+	for (c = 0; c < 8; c++)
 	{
-		_putchar(recur[i]);
+		_putchar(abe[c]);
 	}
-		_putchar('\n');
-		return (0);
+	_putchar('\n');
+	return (0);
 }
