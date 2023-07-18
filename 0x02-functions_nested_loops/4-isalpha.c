@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _isalpha - check the code for ALX School students.
+ * _isalpha - checks for alphabetic charecters
  *
- * @c: is c an integer argument
- *
- * Return: Always 0.
+ * Description: A function that checks if a character
+ * is alphabetic or not
+ * Return: 0
  */
 
 int _isalpha(int c)
