@@ -2,6 +2,8 @@
 
 /**
  * add - add two values together
+ * @a: the first the character
+ * @b: the second character
  *
  * Description: A functions that adds two valuwes together
  * and return the result
