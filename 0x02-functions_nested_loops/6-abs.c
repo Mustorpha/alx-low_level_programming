@@ -1,8 +1,11 @@
 #include "main.h"
+
 /**
- * _abs - returns absolute value of an int
- * @n: integer from which to get an absolute value
- * Return: Void.
+ * _abs - prints the ablsolute the value of a character
+ *
+ * Description: A function that prints the absolute value of a
+ * character
+ * Return: 0
  */
 
 int _abs(int n)
