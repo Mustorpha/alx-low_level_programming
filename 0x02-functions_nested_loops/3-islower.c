@@ -2,6 +2,7 @@
 
 /**
  * _islower - checks for a lower case character
+ * @c: the character to check for lower case
  *
  * Description: A function that checks if a character
  * is lower case or not
