@@ -4,8 +4,8 @@
  * main - Prints the alphabets in lower case
  *
  * Description: A funtion that prints the known alphabets in
- * lower case using the while loop.
- * Return: 0
+ * lower case using the while loop
+ * Return:0
  */
 
 void print_alphabet(void)
