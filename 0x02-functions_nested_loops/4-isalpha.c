@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _isalpha - checks for alphabetic charecters
+ * _isalpha - checks for alphabetic charecter
+ * @c: the chracter checked for alphabet
  *
  * Description: A function that checks if a character
  * is alphabetic or not
