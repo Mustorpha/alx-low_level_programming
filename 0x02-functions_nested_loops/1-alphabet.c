@@ -1,21 +1,22 @@
 #include "main.h"
 
 /**
- * print_alphabet - check the code for ALX School students.
+ * print_alphabet - print the alphabets into the standard output
  *
- * Return: Always 0.
+ * Description: A function that prints the whole alphabetic character
+ * into the standard output
+ * Return:0
  */
 
 void print_alphabet(void)
 {
-	char alp = 'a';
+	char c = 'a';
 
-	while (alp <= 'z')
+	while (c <= 'z')
 	{
-		_putchar (alp);
-		alp++;
+		_putchar (c);
+		c++;
 
 	}
 	_putchar ('\n');
-
 }
