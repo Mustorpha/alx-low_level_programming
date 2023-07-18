@@ -1,17 +1,22 @@
 #include "main.h"
+
 /**
- * main - prints _putchar, fllowd by a new linees
- * Return: Alwys 0 (Success)
+ * main - prints the string _putchar to the standard output
+ * 
+ * Description: A functions that prints a string using
+ * function _putchar
+ * Return: 0
  */
+
 int main(void)
 {
-	char abe[] = "_putchar";
+	char recur[] = "_putchar";
 
-	int c;
+	int i;
 
-	for (c = 0; c < 8; c++)
+	for (i = 0; i < 8; i++)
 	{
-		_putchar(abe[c]);
+		_putchar(recur[i]);
 	}
 	_putchar('\n');
 	return (0);
