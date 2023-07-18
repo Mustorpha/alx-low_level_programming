@@ -2,10 +2,11 @@
 
 /**
  * print_last_digit - prints the last digit of a collection of integers
+ * @n: the set of integers to be slice
  *
  * Description: A functions that prints the last digit of a set of integers
  * into the standard output
- * Return: a
+ * Return: the last digit of a
  */
 
 int print_last_digit(int n)
