@@ -3,7 +3,7 @@
 /**
  * print_alphabet - print the alphabets into the standard output
  *
- * Description: A function that prints the whole alphabetic character
+ * Description: A function that prints the entire alphabetic character
  * into the standard output
  * Return:0
  */
