@@ -7,33 +7,35 @@
  * starting from 0
  * Return: void
  */
-void time_table(void)
+void times_table(void)
 {
-int i, j, k;
-for (i = 0; i < 10; i++)
-{
-for (j = 0; j < 10; j++)
-{
-k = j * i;
-if (j == 0)
-{
-_putchar(k + '0');
-}
-if (k < 10 && j != 0)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(k + '0');
-}
-else if (k >= 10)
-{
-_putchar(',');
-_putchar(' ');
-_putchar((k / 10) + '0');
-_putchar((k % 10) + '0');
-}
-}
-_putchar('\n');
-}
+	int  x, y, z;
+
+	for (x = 0; x < 10; x++)
+	{
+		for (y = 0; y < 10; y++)
+		{
+			z = x * y;
+			if (y == 0)
+				_putchar(z + '0');
+			else
+			{
+				if (x < 10)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar(32);
+					_putchar(z + '0');
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar((z / 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+			}
+		}
+		_putchar('\n');
+	}
 }
