@@ -10,8 +10,16 @@
  * Return: 0
  */
 
-int main (void)
+int main(void)
 {
-	_putchar('_putchar');
-	_putchar("\n");
+	char recur[] = "_putchar";
+
+	int i;
+
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(recur[i]);
+	}
+		_putchar('\n');
+		return (0);
 }
