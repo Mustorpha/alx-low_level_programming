@@ -5,7 +5,7 @@
  *
  * Description: A function that prints the 9 timetable
  * starting from 0
- * Return: void
+ * Return: nothing
  */
 void times_table(void)
 {
