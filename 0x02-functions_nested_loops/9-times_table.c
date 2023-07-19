@@ -7,6 +7,7 @@
  * starting from 0
  * Return: nothing
  */
+
 void times_table(void)
 {
 	int x, y, z;
