@@ -3,7 +3,7 @@
 /**
  * print_times_table - prints the n times table, starting with 0
  * @n: number of the times table
- * 
+ *
  * Description: A function that prints the n times table
  * Return:0
  */
