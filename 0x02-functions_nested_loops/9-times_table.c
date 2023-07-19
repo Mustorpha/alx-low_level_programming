@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * time_table - prints the nine timetable
+ * times_table - prints the nine timetable
  *
  * Description: A function that prints the 9 timetable
  * starting from 0
