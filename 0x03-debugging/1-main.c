@@ -1,10 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - create and infinite loop
-* 
-* Description: the function create and test an infinite loops
-* the runs forever unless interrupted
+* main - causes an infinite loop
 * Return: 0
 */
 
