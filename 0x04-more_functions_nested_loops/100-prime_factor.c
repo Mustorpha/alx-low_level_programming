@@ -6,34 +6,35 @@
  * 
  * Return: Always 0
  */
+
 int main(void)
 {
-	long int a;
-	long int inf;
-	long int b;
+	long int n;
+	long int max;
+	long int i;
 
-	a = 612852475143;
-	inf = -1;
+	n = 612852475143;
+	max = -1;
 
-	while (a % 2 == 0)
+	while (n % 2 == 0)
 	{
-		inf = 2;
-		a /= 2;
+		max = 2;
+		n /= 2;
 	}
 
-	for (b = 3; b <= sqrt(n); b = b + 2)
+	for (i = 3; i <= sqrt(n); i = i + 2)
 	{
-		while (a % b == 0)
+		while (n % i == 0)
 		{
-			inf = b;
-			a = a / b;
+			max = i;
+			n = n / i;
 		}
 	}
 
-	if (a > 2)
-		inf = a;
+	if (n > 2)
+		max = n;
 
-	printf("%ld\n", inf);
+	printf("%ld\n", max);
 
 	return (0);
 }
