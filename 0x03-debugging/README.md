@@ -1,2 +1,2 @@
 # DEBUGGING
-Debugging in C language using the "printf" function
+Debugging in C Programming language using the "printf" function
