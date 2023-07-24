@@ -12,7 +12,7 @@
  * Return: the number of chracter
  */
 
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	int i;
 
