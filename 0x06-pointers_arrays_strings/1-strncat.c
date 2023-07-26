@@ -10,7 +10,6 @@
  * Description: The function takes in two strings pointers and merged
  * in the two string into the destination string and terminates if it
  * encounters a null character or contains n or more character
- *
  * Return: the full string
  */
 
