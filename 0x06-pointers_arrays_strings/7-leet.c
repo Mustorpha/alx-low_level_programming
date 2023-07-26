@@ -9,24 +9,23 @@
 
 char *leet(char *s)
 {
-	int i;
+	int i = 0;
 	int j;
 	int k;
 
-	char l[] = "oOlLeEaAtT";
-	char e[] = "0011334477";
+	char a[] = "oOlLeEaAtT";
+	char b[] = "0011334477";
 
-	i = 0;
 	while (s[i] != '\0')
 	{
 		j = 0;
 		k = 0;
-		while (l[j] != '\0')
+		while (a[j] != '\0')
 		{
-			if (s[i] == l[j])
+			if (s[i] == a[j])
 			{
 				k = j;
-				s[i] = e[k];
+				s[i] = b[k];
 			}
 			j++;
 		}
