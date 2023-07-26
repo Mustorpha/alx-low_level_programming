@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * base10 - power in 10 base
- * @n: an exponent
- * Return: returns 10 to power exponent
+ * base10 - the power of base 10
+ * @n: the exponent
+ * Return: returns base
  */
+
 int base10(int n)
 {
 	int base = 10;
@@ -18,15 +19,17 @@ int base10(int n)
 }
 
 /**
- * print_number - prints integers enters as parameters using putchar
+ * print_number - prints integers using putchar
  * @n: integer to print
+ * 
  * Return: void
  */
+
 void print_number(int n)
 {
-	int power;
+	int pow;
 
-	power = base10(8);
+	pow = base10(8);
 
 	if (n < 0)
 	{
@@ -39,14 +42,14 @@ void print_number(int n)
 
 	else
 	{
-		while (n / power == 0)
-			power /= 10;
+		while (n / pow == 0)
+			pow /= 10;
 
 		while (power >= 1)
 		{
-			_putchar((n / power) + '0');
-			n %= power;
-			power /= 10;
+			_putchar((n / pow) + '0');
+			n %= pow;
+			pow /= 10;
 		}
 	}
 }
