@@ -7,9 +7,6 @@
  * @src: the source string
  * @n: termination position
  *
- * Description: The function takes in two strings pointers and merged
- * in the two string into the destination string and terminates if it
- * encounters a null character or contains n or more character
  * Return: the full string
  */
 
@@ -20,7 +17,6 @@ char *_strncpy(char *dest, char *src, int n)
         while (src[i] != '\0' && i < n)
         {
                 dest[i] = src[i];
-
                 i++;
         }
 
@@ -30,5 +26,5 @@ char *_strncpy(char *dest, char *src, int n)
 		i++;
 	}
 
-        return dest;
+        return (dest);
 }
