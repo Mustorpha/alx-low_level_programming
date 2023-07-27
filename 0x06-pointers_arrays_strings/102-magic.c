@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+* main - prints a[98]
+* 
+* Return: void
+*/
+
 int main(void)
 {
 	int n;
