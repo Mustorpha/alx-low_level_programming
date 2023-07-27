@@ -1,27 +1,8 @@
 #include "main.h"
 
 /**
- * base10 - the power of base 10
- * @n: the exponent
- * Return: returns base
- */
-
-int base10(int n)
-{
-	int base = 10;
-
-	while (n > 0)
-	{
-		base *= 10;
-		n--;
-	}
-	return (base);
-}
-
-/**
  * print_number - prints integers using putchar
  * @n: integer to print
- * 
  * Return: void
  */
 
