@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 
 /**
@@ -11,14 +12,15 @@
 int _strcmp(char *s1, char *s2)
 {
 	int val = 0;
-
+	
 	while (*s1 == *s2 && *s1 != '\0')
 	{
 		s1++;
 		s2++;
 	}
 	if (s1 != s2)
+	{
 		val = *s1 - *s2;
-
+	}
 	return (val);
 }
