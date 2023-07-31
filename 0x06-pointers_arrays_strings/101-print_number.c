@@ -12,6 +12,7 @@ int base10(int n)
 	while (n > 0)
 	{
 		base *= 10;
+
 		n--;
 	}
 	return (base);
