@@ -12,22 +12,22 @@ int main(int argc, char **argv)
 {
 	int mul;
 
-	mul = 0;
+	mul = 1;
 
 	if (argc <= 2)
 	{
-		printf("%s\n", "Error");
+		printf("Error\n");
 		return (1);
 	}
 
 	else
 	{
-		while (argc--)
+		while (--argc)
 		{
-			mul *= atoi(argv[argc]);
+			mul *= atoi(*++argv);
 		}
 
-		printf("%d", mul);
+		printf("%d\n", mul);
 		return (1);
 	}
 }
