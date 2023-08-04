@@ -33,10 +33,10 @@ int main(int argc, char **argv)
 
 	for (i = 0; i < 5 && coin >= 0; i++)
 	{
-		while (coin >= cent[j])
+		while (coin >= cent[i])
 		{
 			change++;
-			coin -= cent[j];
+			coin -= cent[i];
 		}
 	}
 
