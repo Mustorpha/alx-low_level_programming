@@ -23,9 +23,9 @@ int main(int argc, int argv)
 
 	for (i = 1; i < argc; i++)
 	{
-		if (*(argv + i) >= "0" && *(argv + i) <= "9")
+		if (atoi(*(argv + i)) >= "0" && atoi(*(argv + i)) <= "9")
 		{
-			sum += *(argv + i);
+			sum += atoi(*(argv + i));
 		}
 		else
 		{
