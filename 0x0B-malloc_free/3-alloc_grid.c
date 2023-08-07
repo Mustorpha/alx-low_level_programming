@@ -24,11 +24,12 @@ char **alloc_grid(int width, int height)
 		arr[i] = calloc(width, sizeof(int));
 		if (arr[i] == NULL)
 		{
-			for (i; i >= 0; i--)
+			for (i--; i >= 0; i--)
 			{
 				free(arr[i]);
-				return (NULL);
 			}
+			free(arr);
+			return (NULL);
 		}
 	}
 	return (arr);
