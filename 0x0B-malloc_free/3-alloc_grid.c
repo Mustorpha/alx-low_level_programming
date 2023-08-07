@@ -13,7 +13,6 @@ char **alloc_grid(int width, int height)
 {
 	int **arr;
 	int i;
-	int j;
 
 	if (width < 1 || height < 1)
 	{
@@ -25,7 +24,7 @@ char **alloc_grid(int width, int height)
 		arr[i] = calloc(width, sizeof(int));
 		if (arr[i] == NULL)
 		{
-			for (i - 1; i >= 0; i--)
+			for (i; i >= 0; i--)
 			{
 				free(arr[i]);
 				return (NULL);
