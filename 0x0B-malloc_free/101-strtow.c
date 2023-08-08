@@ -13,7 +13,7 @@ char **strtow(char *str)
 	int i = 0, j = 0, k = 0;
 	char **arr;
 
-	if (str == NULL || str == "")
+	if (str == NULL || str == '')
 		return (NULL);
 	arr = mem_alloc(str);
 
