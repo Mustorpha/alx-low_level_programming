@@ -13,12 +13,19 @@ char *argstostr(int ac, char **av)
 {
 	char *str;
 	int i;
+	int size = 0;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
-	str = malloc(((sizeof(char *) + 1) * ac) - 1);
+	for (i = 0; 1 < ac; i++)
+	{
+		if (av[i] == NULL)
+			return (NULL);
+		size += sizeof(a[i]) - 1;
+	}
+	str = malloc(sizeof(char) * (size + 1));
 
 	if (str == NULL)
 	{
