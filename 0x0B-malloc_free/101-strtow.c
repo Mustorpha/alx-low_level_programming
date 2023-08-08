@@ -89,7 +89,7 @@ char **mem_alloc(char *s)
 		if (s[i] != ' ')
 		{
 			c_count++;
-			if (s[i + 1] == ' ')
+			if (s[i + 1] == ' ' || s[i + 1] == '\0')
 			{
 				c_count++;
 				arr[j] = malloc(sizeof(char) * c_count);
