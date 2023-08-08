@@ -29,11 +29,11 @@ char *argstostr(int ac, char **av)
 	{
 		if (i % 2)
 		{
-			str[i] = "\n";
+			*(str + 1) = "\n";
 		}
 		else
 		{
-			str[i] = av[(i / 2) + 1];
+			*(str + 1) = *av[(i / 2) + 1];
 		}
 	}
 	str[ac] = '\0';
