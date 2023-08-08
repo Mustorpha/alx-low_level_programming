@@ -27,7 +27,7 @@ char **strtow(char *str)
 		{
 			arr[k][j] = str[i];
 			j++;
-			if (str[i + 1] == ' ')
+			if (str[i + 1] == ' ' || str[i + 1] == '\0')
 			{
 				arr[k][j++] = '\0';
 				k++;
