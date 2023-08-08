@@ -52,7 +52,7 @@ int word_count(char *s)
 
 	while (s[i])
 	{
-		if ((s[i] != ' ') && (s[i - 1] == ' '))
+		if ((s[i] != ' ') && ((s[i - 1] == ' ') || !(s[i - 1])))
 		{
 			w_count++;
 		}
@@ -79,6 +79,7 @@ char **mem_alloc(char *s)
 	arr = malloc(sizeof(char *) * (w_count + 1));
 
 	if (arr == NULL)
+		free(arr)
 		return (NULL);
 	while (s[i])
 	{
@@ -97,6 +98,7 @@ char **mem_alloc(char *s)
 						free(arr[j]);
 						return (NULL);
 					}
+					free(arr);
 				}
 				j++;
 				c_count = 0;
