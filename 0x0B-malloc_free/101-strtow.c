@@ -79,7 +79,7 @@ char **mem_alloc(char *s)
 	arr = malloc(sizeof(char *) * (w_count + 1));
 
 	if (arr == NULL)
-		free(arr)
+		free(arr);
 		return (NULL);
 	while (s[i])
 	{
