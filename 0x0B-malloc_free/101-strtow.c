@@ -36,6 +36,7 @@ char **strtow(char *str)
 		}
 		i++;
 	}
+	arr[k] = NULL;
 	return (arr);
 }
 
@@ -79,8 +80,10 @@ char **mem_alloc(char *s)
 	arr = malloc(sizeof(char *) * (w_count + 1));
 
 	if (arr == NULL)
+	{
 		free(arr);
 		return (NULL);
+	}
 	while (s[i])
 	{
 		if (s[i] != ' ')
@@ -106,6 +109,5 @@ char **mem_alloc(char *s)
 		}
 		i++;
 	}
-	arr[j] = NULL;
 	return (arr);
 }
