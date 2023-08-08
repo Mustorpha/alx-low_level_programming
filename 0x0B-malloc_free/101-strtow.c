@@ -13,7 +13,7 @@ char **strtow(char *str)
 	int i = 0, j = 0, k = 0;
 	char **arr;
 
-	if (str == NULL || str == '')
+	if (str == NULL || str == "")
 		return (NULL);
 	arr = mem_alloc(str);
 
@@ -69,9 +69,7 @@ int word_count(char *s)
 
 char **mem_alloc(char *s)
 {
-	int i = 0, j = 0, k = 0;
-
-	int w_count, c_count = 0;
+	int i = 0, j = 0, k = 0, w_count, c_count = 0;
 	char **arr;
 
 	w_count = word_count(s);
@@ -95,8 +93,10 @@ char **mem_alloc(char *s)
 				if (arr[j] == NULL)
 				{
 					for (j--; j >= 0; j--)
+					{
 						free(arr[j]);
 						return (NULL);
+					}
 				}
 				j++;
 				c_count = 0;
