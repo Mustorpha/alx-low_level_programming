@@ -29,7 +29,7 @@ char *argstostr(int ac, char **av)
 	{
 		if (i % 2)
 		{
-			*(str + 1) = "\n";
+			*(str + 1) = '\n';
 		}
 		else
 		{
@@ -37,4 +37,6 @@ char *argstostr(int ac, char **av)
 		}
 	}
 	str[ac] = '\0';
+
+	return (str);
 }
