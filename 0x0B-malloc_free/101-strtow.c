@@ -13,10 +13,10 @@ char **strtow(char *str)
 	int i = 0, j = 0, k = 0;
 	char **arr;
 
-	if (str == NULL || str == "")
+	if (str == NULL || *str == '\0')
 		return (NULL);
 	arr = mem_alloc(str);
-	
+
 	if (arr == NULL)
 	{
 		return (NULL);
@@ -27,21 +27,22 @@ char **strtow(char *str)
 		{
 			arr[k][j] = str[i];
 			j++;
-			if (str[i + 1] == ' ')
-    		{
-    		    arr[k][j++] = '\0';
-    			k++;
-    			j = 0;
-    		}
+			if (str[i + 1] == ' ' || str[i + 1] == '\0')
+			{
+				arr[k][j++] = '\0';
+				k++;
+				j = 0;
+			}
 		}
 		i++;
 	}
+	arr[k] = NULL;
 	return (arr);
 }
 
 /**
  * word_count - finds the total number of words in a given string literal
- * @str: the string literal
+ * @s: the string literal
  * Return: the total number of words
 */
 
@@ -52,7 +53,7 @@ int word_count(char *s)
 
 	while (s[i])
 	{
-		if ((s[i] != ' ') && (s[i - 1] == ' '))
+		if ((s[i] != ' ') && ((s[i - 1] == ' ') || !(s[i - 1])))
 		{
 			w_count++;
 		}
@@ -69,9 +70,7 @@ int word_count(char *s)
 
 char **mem_alloc(char *s)
 {
-	int i = 0, j = 0, k = 0;
-	int w_count;
-	int c_count = 0;
+	int i = 0, j = 0, w_count, c_count = 0;
 	char **arr;
 
 	w_count = word_count(s);
@@ -82,6 +81,7 @@ char **mem_alloc(char *s)
 
 	if (arr == NULL)
 	{
+		free(arr);
 		return (NULL);
 	}
 	while (s[i])
@@ -89,11 +89,11 @@ char **mem_alloc(char *s)
 		if (s[i] != ' ')
 		{
 			c_count++;
-			if (s[i+1] == ' ')
+			if (s[i + 1] == ' ' || s[i + 1] == '\0')
 			{
 				c_count++;
 				arr[j] = malloc(sizeof(char) * c_count);
-				
+
 				if (arr[j] == NULL)
 				{
 					for (j--; j >= 0; j--)
@@ -101,6 +101,7 @@ char **mem_alloc(char *s)
 						free(arr[j]);
 						return (NULL);
 					}
+					free(arr);
 				}
 				j++;
 				c_count = 0;
@@ -108,6 +109,5 @@ char **mem_alloc(char *s)
 		}
 		i++;
 	}
-	arr[j] = NULL;
 	return (arr);
 }
