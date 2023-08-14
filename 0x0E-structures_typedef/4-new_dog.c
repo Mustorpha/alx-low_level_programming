@@ -5,63 +5,62 @@ int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 
 /**
- * new_dog - ...
- * @name: ...
- * @age: ...
- * @owner: ...
- *
- * Return: ...
+ * new_dog - creates a new dog and initializes it
+ * @name: the dog name
+ * @age: the dog age
+ * @owner: the dog owner
+ * Return: the dog pointer
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *cutie_dog;
-	int name_l = 0, own_l = 0;
+	dog_t *cutie;
+	int name_len = 0, own_len = 0;
 
 	if (name != NULL && owner != NULL)
 	{
-		name_l = _strlen(name) + 1;
-		own_l = _strlen(owner) + 1;
-		cutie_dog = malloc(sizeof(dog_t));
+		name_len = _strlen(name) + 1;
+		own_len = _strlen(owner) + 1;
+		cutie = malloc(sizeof(dog_t));
 
-		if (cutie_dog == NULL)
+		if (cutie == NULL)
 			return (NULL);
 
-		cutie_dog->name = malloc(sizeof(char) * name_l);
+		cutie->name = malloc(sizeof(char) * name_len);
 
-		if (cutie_dog->name == NULL)
+		if (cutie->name == NULL)
 		{
-			free(cutie_dog);
+			free(cutie);
 			return (NULL);
 		}
 
-		cutie_dog->owner = malloc(sizeof(char) * own_l);
+		cutie->owner = malloc(sizeof(char) * own_len);
 
-		if (cutie_dog->owner == NULL)
+		if (cutie->owner == NULL)
 		{
-			free(cutie_dog->name);
-			free(cutie_dog);
+			free(cutie->name);
+			free(cutie);
 			return (NULL);
 		}
 
-		cutie_dog->name = _strcpy(cutie_dog->name, name);
-		cutie_dog->owner = _strcpy(cutie_dog->owner, owner);
-		cutie_dog->age = age;
+		cutie->name = _strcpy(cutie->name, name);
+		cutie->owner = _strcpy(cutie->owner, owner);
+		cutie->age = age;
 	}
 
-	return (cutie_dog);
+	return (cutie);
 }
 
 /**
- * _strlen - Returns the length of a string
- * @s: String to count
- *
- * Return: String length
+ * _strlen - counts the number of character in a string
+ * @s: pointer to the string
+ * Return: string length
  */
+
 int _strlen(char *s)
 {
-	int c = 0;
+	int c;
 
-	for (; *s != '\0'; s++)
+	for (c = 0; *s != '\0'; s++)
 	{
 		c++;
 	}
@@ -70,11 +69,10 @@ int _strlen(char *s)
 }
 
 /**
- * _strcpy - Copy a string
- * @dest: Destination value
- * @src: Source value
- *
- * Return: the pointer to dest
+ * _strcpy - copies a string
+ * @dest: Destination variable
+ * @src: Source variable
+ * Return: the pointer to destination
  */
 char *_strcpy(char *dest, char *src)
 {
