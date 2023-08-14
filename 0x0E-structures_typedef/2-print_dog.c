@@ -3,11 +3,12 @@
 #include "dog.h"
 
 /**
- * print_dog - Prints all the data of a dog
- * @d: A dog structure
- *
- * Return: Nothing
+ * print_dog - prints the data in a dog type
+ * @d: a pointer to the dog structure
+ * Return: void
  */
+
+
 void print_dog(struct dog *d)
 {
 	if (d != NULL)
