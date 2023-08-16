@@ -25,15 +25,23 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(2);
 	}
-	ops = (char *)&main;
+	ops = (char *)main;
 
 	while (i)
 	{
 		if (i == 1)
+		{
 			printf("%.2hhx\n", *(ops));
-		printf("%.2hhx ", *(ops));
-		ops++;
-		i--;
+			i--;
+		}
+		else
+		{
+
+			printf("%.2hhx ", *(ops));
+			ops++;
+			i--;
+		}
 	}
+
 	return (0);
 }
