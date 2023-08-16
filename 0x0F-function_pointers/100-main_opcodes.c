@@ -35,4 +35,5 @@ int main(int argc, char **argv)
 		ops++;
 		i--;
 	}
+	return (0);
 }
