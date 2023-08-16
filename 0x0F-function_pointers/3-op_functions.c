@@ -1,10 +1,11 @@
 #include "3-calc.h"
 
 /**
- * op_add - adds two integer together
- * @a: the first integer
- * @b: the second integer
- * Return: the summation
+ * op_add - calculates the sum of two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: sum of a and b
  */
 int op_add(int a, int b)
 {
@@ -12,10 +13,11 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - subtracts two integer form each other
- * @a: the first integer
- * @b: the second integer
- * Return: the result
+ * op_sub - calculates the difference of two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: difference of a and b
  */
 int op_sub(int a, int b)
 {
@@ -23,10 +25,11 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - multiplies two integers
- * @a: the first integer
- * @b: the second integer
- * Return: the result
+ * op_mul - calculates the product of two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -34,10 +37,11 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - divides two integers
- * @a: the dividend
- * @b: the divisor
- * Return: the floor division
+ * op_div - calculates the division of two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: result of the division of a and b
  */
 int op_div(int a, int b)
 {
@@ -45,10 +49,11 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - finds the modulus of a number
- * @a: the number
- * @b: the module
- * Return: the modulus
+ * op_mod - calculates the remainder of the division of two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: remainder of a divided b
  */
 int op_mod(int a, int b)
 {
