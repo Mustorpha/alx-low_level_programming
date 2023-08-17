@@ -10,15 +10,15 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list arg_input;
+	va_list args_input;
 	unsigned int i;
 	char *str;
 
-	va_start(arg_input, n);
+	va_start(args_input, n);
 
 	for (i = 0; i < n; i++)
 	{
-		str = va_arg(arg_input, char *);
+		str = va_arg(args_input, char *);
 
 		if (str)
 			printf("%s", str);
@@ -31,5 +31,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 
 	printf("\n");
-	va_end(arg_input);
+	va_end(args_input);
 }
