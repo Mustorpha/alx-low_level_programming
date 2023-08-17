@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include "main.h"
 
 /**
  * sum_them_all - sum up all argument received
