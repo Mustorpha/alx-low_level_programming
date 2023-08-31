@@ -2,7 +2,7 @@
 
 /**
  * flip_bits - counts the number of bits to flip to
- * 		convert a binary digit to another
+ * convert a binary digit to another
  * @n: the orginal bit representation
  * @m: the intended bit conversion
  * Return: number of bits to flip
